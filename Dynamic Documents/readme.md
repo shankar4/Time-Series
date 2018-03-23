@@ -25,7 +25,10 @@ I also installed 'shiny' package to help with web pages (html).
 
 'A Minimal Example' is covered in his chapter 3. In RStudio, use File --> New File --> R Markdown. Once the document is ready, click the **knit** button. A document will be generated that includes both narrative and output of embedded R code. It is saved as 'A Minimal Example.Rmd'. (R markdown url: rmarkdown.rstudio.com). After clicking the kint button, this file is generated: 'A_Minimal_Example.html.' I clicked the 'Publish' button at the right hand side top. Rstudio suggested that I install PKI, rsconnect. I installed them. These will help me publish at RPubs and RStudio Connect. Will save it for some really good examples from me! For now, launch the .html file attached here in a web browser to see the result. This is not easy from Github, unless you download all of the files as a zip file. Here is the way to do it directly from Github. First launch this link in a new browser window: http://htmlpreview.github.io/ -- Right click and copy the html page link, and paste it in the box in that window. Hit the >> icon, and your html page will render properly. 
 
-The knitr package reference site is [here](https://yihui.name/knitr/). 
+The knitr package reference site is [here](https://yihui.name/knitr/). Choose the options tab to see all the chunk options. Examples are at this Github [repo](https://github.com/yihui/knitr-examples).
+
+### Ch. 4: Editors
+
 
 
 
