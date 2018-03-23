@@ -27,7 +27,7 @@ I also installed 'shiny' package to help with web pages (html).
 
 The knitr package reference site is [here](https://yihui.name/knitr/). Choose the options tab to see all the chunk options. Examples are at this Github [repo](https://github.com/yihui/knitr-examples).
 
-### Ch. 4: Editors
+### Ch. 5: Document Formats
 
 
 
