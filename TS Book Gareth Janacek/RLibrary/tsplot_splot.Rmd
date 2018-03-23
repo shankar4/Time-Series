@@ -1,0 +1,44 @@
+---
+title: "Time Series in R"
+author: "RS"
+date: "March 23, 2018"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Time Series in R
+### From 'Practical Time Series' by Gareth and Janacek
+```{r common, echo=FALSE}
+setwd("/home/shankar/TimeSeries")
+wheat <- read.table("Time Series Data/wheat.dat")
+```
+
+
+tsplot(series): Given a series this function plots the points and joins them with lines
+
+```{r tsplot, echo=FALSE}
+tsplot<-function(x)
+{
+# time series plotter - plots time against x 
+# this is the basic time domain plotter
+time<-seq(1,length(x))
+ plot(time,x,type="b")
+
+}
+tsplot(wheat)
+```
+
+splot(series): Given a series this funtion plots the points against frequencies
+
+```{r splot, echo=FALSE}
+splot<-function(x)
+{n<-length(x)
+w<-seq(0:(n-1))*3.14159/(n-1)
+plot(w,x,type="l")
+}
+splot(wheat)
+```
+
