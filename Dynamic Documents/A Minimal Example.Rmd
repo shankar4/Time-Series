@@ -1,0 +1,38 @@
+---
+title: "A Minimal Example"
+author: "RS"
+date: "March 23, 2018"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Introduction
+
+We examine the relationship between speed and stopping distance using a linear regression model: $Y = \beta_0 + \beta-1 x + \epsilon$.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+## Use cars data set (provided)
+
+```{r cars}
+summary(cars)
+```
+
+## Plot dist vs speed
+
+Embed a plot thus: 
+
+```{r regression model, fig.width=4, fig.height=3, fig.aligh='center', echo=FALSE}
+par(mar = c(4,4,1,1), mgp = c(2,1,0), cex= 0.8)
+plot(cars, pch=20, col='darkgray')
+fit <- lm(dist ~ speed, data = cars)
+abline(fit, lwd =2)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+
+The slope of a simple linear regression is
+`r coef(fit)[2]`
