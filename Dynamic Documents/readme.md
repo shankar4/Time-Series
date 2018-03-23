@@ -18,3 +18,12 @@ Set up: In Rstudio, type:
 
 'showtext' had non-zero exit. I tried to install 'showtext' package again. This failed with a suggestion to install libfreetype6.dev, in cmd shell:
 >sudo apt-get install libfreetype6-dev
+
+After this, I reinstalled 'showtext' and then knitr (as given above). It was successful. 
+
+I also installed 'shiny' package to help with web pages (html). 
+
+'A Minimal Example' is covered in his chapter 3. In RStudio, use File --> New File --> R Markdown. Once the document is ready, click the **knit** button. A document will be generated that includes both narrative and output of embedded R code. It is saved as 'A Minimal Example.Rmd'. (R markdown url: rmarkdown.rstudio.com). After clicking the kint button, this file is generated: 'A Minimal Example.html.' I clicked the 'Publish' button at the right hand side top. Rstudio suggested that I install PKI, rsconnect. I installed them. These will help me publish at RPubs and RStudio Connect. Will save it for some really good examples from me! For now, launch the .html file attached here in a web browser to see the result. 
+
+
+
