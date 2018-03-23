@@ -15,5 +15,6 @@ RR has some barriers:
 
 Set up: In Rstudio, type: 
 >install.packages("knitr", dependencies=TRUE)
+
 'showtext' had non-zero exit. I tried to install 'showtext' package again. This failed with a suggestion to install libfreetype6.dev, in cmd shell:
 >sudo apt-get install libfreetype6-dev
